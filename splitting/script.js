@@ -1,5 +1,13 @@
 let nameCounter = {};
 const fileIconUrl = "fileicon.png";
+const fileIcons = {
+  "pdf": "pdficon.png",
+  "txt": "texticon.png",
+  "js": "jsicon.png",
+  "html": "htmlicon.png",
+  "css": "cssicon.png"
+};
+
 
 function generateName() {
   const input = document.getElementById("nameInput").value;
@@ -18,6 +26,9 @@ function generateName() {
   fileIcon.src = fileIconUrl;
   fileIcon.alt = "File Icon";
   fileIcon.style.marginRight = "5px";
+
+  const iconUrl = fileIcons[extension] ? fileIcons[extension] : "fileicon.png";
+  fileIcon.src = iconUrl;
 
   // created a new span element to hold the file name 
   const fileName = document.createElement("span");
