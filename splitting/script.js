@@ -45,21 +45,21 @@ function generateName() {
   fileSection.appendChild(fileContainer);
 
 
-  // Get the view style buttons
+  // style buttons
   const listViewBtn = document.getElementById("listViewBtn");
   const mediumIconsViewBtn = document.getElementById("mediumIconsViewBtn");
 
  
 
-  // Add event listeners to the view style buttons
+  // added event listeners to the view style buttons
   listViewBtn.addEventListener("click", function() {
-  // Remove the medium icons class and add the list class
+  // remove the medium icons class and add the list class
   fileSection.classList.remove("medium-icons");
   fileSection.classList.add("list");
   });
 
   mediumIconsViewBtn.addEventListener("click", function() {
-  // Remove the list class and add the medium icons class
+  // remove the list class and add the medium icons class
   fileSection.classList.remove("list");
   fileSection.classList.add("medium-icons");
   });

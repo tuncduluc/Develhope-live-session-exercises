@@ -2,7 +2,7 @@ img {
     width: 22px;
     height: 22px;
   }
-  /* List View */
+  /* list view */
 #fileSection.list {
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
 #fileSection.list > div > img {
@@ -25,12 +26,15 @@ img {
 }
 
 
-/* Medium Icons View */
+/* medium icons */
 #fileSection.medium-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  padding-right: 25vh;
+  padding-left: 25vh;
+  margin-top: 5%;
 }
 
 #fileSection.medium-icons > div {
