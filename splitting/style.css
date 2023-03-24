@@ -2,3 +2,78 @@ img {
     width: 22px;
     height: 22px;
   }
+  /* List View */
+#fileSection.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#fileSection.list > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#fileSection.list > div > img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;}
+
+#fileSection.list > div > span {
+  font-size: 18px;
+}
+
+
+/* Medium Icons View */
+#fileSection.medium-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#fileSection.medium-icons > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+}
+
+#fileSection.medium-icons > div > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#fileSection.medium-icons > div > span {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+#viewStyle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+#listViewBtn {
+  top: 80px;
+}
+
+#mediumIconsViewBtn {
+  top: 120px;
+}

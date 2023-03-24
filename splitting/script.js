@@ -7,7 +7,8 @@ const fileIcons = {
   "html": "htmlicon.png",
   "css": "cssicon.png"
 };
-
+const listViewBtn = document.getElementById("listViewBtn");
+const mediumIconsViewBtn = document.getElementById("mediumIconsViewBtn");
 
 function generateName() {
   const input = document.getElementById("nameInput").value;
@@ -42,6 +43,28 @@ function generateName() {
   // where the file containers will be displayed
   const fileSection = document.getElementById("fileSection");
   fileSection.appendChild(fileContainer);
+
+
+  // Get the view style buttons
+  const listViewBtn = document.getElementById("listViewBtn");
+  const mediumIconsViewBtn = document.getElementById("mediumIconsViewBtn");
+
+ 
+
+  // Add event listeners to the view style buttons
+  listViewBtn.addEventListener("click", function() {
+  // Remove the medium icons class and add the list class
+  fileSection.classList.remove("medium-icons");
+  fileSection.classList.add("list");
+  });
+
+  mediumIconsViewBtn.addEventListener("click", function() {
+  // Remove the list class and add the medium icons class
+  fileSection.classList.remove("list");
+  fileSection.classList.add("medium-icons");
+  });
+
+  
 
   console.log(newName);
 }
